@@ -1,0 +1,10 @@
+.myActivityContainer{
+    border: 1px solid black;
+    width: 300px;
+    min-height: 36px;
+    float: right;
+    margin-left: 500px;
+    top: 50px;
+    text-align: center;
+    position: fixed;
+}

@@ -1,0 +1,193 @@
+{
+	"info": {
+		"name": "User",
+		"_postman_id": "613e475d-bf42-aa61-587a-6b0163f7aec9",
+		"description": "User verbs examples",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:52104/api/User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:52104/api/User",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"User"
+					]
+				},
+				"description": "Get all Users"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/User/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:52104/api/User/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"User",
+						"2"
+					]
+				},
+				"description": "Get specific User"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fullname\" : \"Ionut Popescu\",\n\t\"userName\" : \"popI2003\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/User",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"User"
+					]
+				},
+				"description": "Add User"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/User/5",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fullname\" : \"Ionut Popescu\",\n\t\"userName\" : \"popI2007\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/User/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"User",
+						"5"
+					]
+				},
+				"description": "Update User"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/User/5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:52104/api/User/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"User",
+						"5"
+					]
+				},
+				"description": "Delete User"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/UserInterest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\" : \"Adrian\",\n\t\"idInterest\" : 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/UserInterest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"UserInterest"
+					]
+				},
+				"description": "Add Interest to a User"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Interest/User/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:52104/api/Interest/User/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Interest",
+						"User",
+						"2"
+					]
+				},
+				"description": "Get Interests From a User"
+			},
+			"response": []
+		}
+	]
+}

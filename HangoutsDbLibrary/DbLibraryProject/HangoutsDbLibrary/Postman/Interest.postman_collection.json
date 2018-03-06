@@ -1,0 +1,155 @@
+{
+	"info": {
+		"name": "Interest",
+		"_postman_id": "d3cfe732-aa39-7b7e-4795-9beadc250791",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:52104/api/Interest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:52104/api/Interest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Interest"
+					]
+				},
+				"description": "Get all Interests"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Interest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\" : \"Art\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Interest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Interest"
+					]
+				},
+				"description": "Create Interest"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Interest/4",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\" : \"Travel\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Interest/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Interest",
+						"4"
+					]
+				},
+				"description": "Update Interest"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Interest/4",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\" : \"Travel\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Interest/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Interest",
+						"4"
+					]
+				},
+				"description": "Delete Interest"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Interest/2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\" : \"Travel\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Interest/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Interest",
+						"2"
+					]
+				},
+				"description": "Get one interest"
+			},
+			"response": []
+		}
+	]
+}

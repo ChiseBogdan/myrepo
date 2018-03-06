@@ -1,0 +1,4 @@
+Exista un Bug pe care nu am stiut cum sa il opresc.
+Cand selectez intr-o casuta un singur (nu multiplu, adica la Discover Group si Discover Activity )
+obiect si doresc sa schimb acel obiect trebuie sa apas X,
+altfel obiectul nu se schimba. 

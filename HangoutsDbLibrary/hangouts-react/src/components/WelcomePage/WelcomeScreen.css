@@ -1,0 +1,101 @@
+.react-user {
+    padding: 10px;
+    max-width: 300px;
+    margin: 6px;
+}
+
+.head {
+    width: auto;
+    height: 100px;
+    background: url('../../resources/activityLogo.png') no-repeat center;
+    border-bottom: 3px solid orange;
+}
+
+.text-boxes{
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.text-font{
+    font-family: "Titillium Web", sans-serif;
+}
+
+.loginButtons{
+    border-radius: 4px;
+    padding: 12px 28px;
+    background-color: #e5550d;
+    width: 300px;
+    
+}
+
+.loginButtons:hover{
+    background-color: #f7854c;
+}
+
+/* Style the tab */
+.myPanel {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 0;
+    padding: 0px 0px;
+    text-align: center;
+}
+
+
+/* Change background color of buttons on hover */
+.myPanel button:hover{
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.buttonNonactive{
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px;
+    transition: 0.8s;
+    font-size: 20px;
+    width: 50%;
+    background-color: #fcb66c;
+}
+
+.screenUser{
+    padding-top: 15px;
+}
+
+.buttonActive{
+    background-color: #c68035;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 40px;
+    transition: 0.8s;
+    font-size: 20px;
+    width: 50%;
+}
+
+.myPanelContent {
+    display: block;
+    padding: 6px 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 0;
+    border: 1px solid #ccc;
+    text-align: center;
+    max-width: 375px;
+    min-height: 230px;
+    height: auto;
+}

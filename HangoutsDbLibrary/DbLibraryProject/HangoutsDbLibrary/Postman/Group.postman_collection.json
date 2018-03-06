@@ -1,0 +1,411 @@
+{
+	"info": {
+		"name": "Group",
+		"_postman_id": "ea0cb314-fbd5-fd98-9404-98581ab6d837",
+		"description": "Everything that can be done with a Group",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:52104/api/Group",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\" : \"GroupForTest\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Group",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Group"
+					]
+				},
+				"description": "Get all groups"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Group",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\" : \"GroupForTest\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Group",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Group"
+					]
+				},
+				"description": "Create a Group"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Group/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\" : \"GroupForTest\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Group/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Group",
+						"1"
+					]
+				},
+				"description": "Get one Group"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Group/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\" : \"GroupForTest\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Group/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Group",
+						"1"
+					]
+				},
+				"description": "Delete a Group"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Group/2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\" : \"GroupForTestChanged\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Group/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Group",
+						"2"
+					]
+				},
+				"description": "Udpate a Group"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/UserGroup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"userName\" : \"Mihai\",\n        \"idGroup\" : 2\n        \n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/UserGroup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"UserGroup"
+					]
+				},
+				"description": "Add User To Group"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Group/User/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:52104/api/Group/User/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Group",
+						"User",
+						"1"
+					]
+				},
+				"description": "Get all Groups From a User"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/User/Group/2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"userName\" : \"Mihai\",\n        \"idGroup\" : 2\n        \n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/User/Group/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"User",
+						"Group",
+						"2"
+					]
+				},
+				"description": "Get Users From a Group"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/GroupActivity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"GroupId\": 3,\n        \"ActivityId\": 2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/GroupActivity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"GroupActivity"
+					]
+				},
+				"description": "Add Activity To a Group"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Activity/Group/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:52104/api/Activity/Group/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Activity",
+						"Group",
+						"1"
+					]
+				},
+				"description": "Get All Activities From a Group"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/GroupPlan",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"planId\" : 1,\n\t\"groupId\": 2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/GroupPlan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"GroupPlan"
+					]
+				},
+				"description": "Add Plan To a Group"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Plan/Group/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:52104/api/Plan/Group/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Plan",
+						"Group",
+						"2"
+					]
+				},
+				"description": "Get Plans From a Group"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/GroupAdmin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"groupId\" : 2,\n\t\"UserName\" : \"Adrian\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/GroupAdmin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"GroupAdmin"
+					]
+				},
+				"description": "Add Admin to a Group"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/GroupAdmin/Group/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:52104/api/GroupAdmin/Group/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"GroupAdmin",
+						"Group",
+						"2"
+					]
+				},
+				"description": "Get Admin from a Group"
+			},
+			"response": []
+		}
+	]
+}

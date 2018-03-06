@@ -1,0 +1,163 @@
+{
+	"info": {
+		"name": "Activity",
+		"_postman_id": "7814d3a6-cdcc-7f30-0f2f-0df9acebbf3a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:52104/api/Activity",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\" : \"Travel\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Activity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Activity"
+					]
+				},
+				"description": "Get all Activities"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Activity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\" : \"Travel\",\n\t\"BeginningTimeActivity\" : \"12.02.2010 7:06\" ,\n\t\"EndTimeActivity\" :\"12.02.2010 10:06\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Activity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Activity"
+					]
+				},
+				"description": "Create Activity"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Activity/2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\" : \"Travel\",\n\t\"BeginningTimeActivity\" : \"12.02.2010 7:06\" ,\n\t\"EndTimeActivity\" :\"12.02.2010 10:06\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Activity/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Activity",
+						"2"
+					]
+				},
+				"description": "Get one Activity"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Activity/3",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\" : \"Travel\",\n\t\"BeginningTimeActivity\" : \"12.02.2010 7:06\" ,\n\t\"EndTimeActivity\" :\"12.02.2010 12:06\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Activity/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Activity",
+						"3"
+					]
+				},
+				"description": "Update Activity"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Activity/2",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\" : \"Travel\",\n\t\"BeginningTimeActivity\" : \"12.02.2010 7:06\" ,\n\t\"EndTimeActivity\" :\"12.02.2010 12:06\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Activity/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Activity",
+						"2"
+					]
+				},
+				"description": "Delete Activity"
+			},
+			"response": []
+		}
+	]
+}

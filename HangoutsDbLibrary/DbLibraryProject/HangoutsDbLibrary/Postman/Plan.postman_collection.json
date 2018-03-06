@@ -1,0 +1,163 @@
+{
+	"info": {
+		"name": "Plan",
+		"_postman_id": "fb466373-fe51-1200-fb31-aa40f056050c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:52104/api/Plan",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\" : \"Dinner\",\n\t\"beginnigTimePlan\" : \"12.02.2010 7:06\" ,\n\t\"EndTimePlan\" :\"12.02.2010 12:06\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Plan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Plan"
+					]
+				},
+				"description": "Create Plan"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Plan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\" : \"Dinner\",\n\t\"beginnigTimePlan\" : \"12.02.2010 7:06\" ,\n\t\"EndTimePlan\" :\"12.02.2010 12:06\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Plan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Plan"
+					]
+				},
+				"description": "Get all Plans"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Plan/3",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\" : \"Dinner\",\n\t\"beginnigTimePlan\" : \"12.02.2010 10:06\" ,\n\t\"EndTimePlan\" :\"12.02.2010 12:06\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Plan/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Plan",
+						"3"
+					]
+				},
+				"description": "Update Plan"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Plan/3",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\" : \"Dinner\",\n\t\"beginnigTimePlan\" : \"12.02.2010 10:06\" ,\n\t\"EndTimePlan\" :\"12.02.2010 12:06\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Plan/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Plan",
+						"3"
+					]
+				},
+				"description": "Delete Plan"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:52104/api/Plan/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\" : \"Dinner\",\n\t\"beginnigTimePlan\" : \"12.02.2010 10:06\" ,\n\t\"EndTimePlan\" :\"12.02.2010 12:06\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:52104/api/Plan/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52104",
+					"path": [
+						"api",
+						"Plan",
+						"1"
+					]
+				},
+				"description": "Get one Plan"
+			},
+			"response": []
+		}
+	]
+}
