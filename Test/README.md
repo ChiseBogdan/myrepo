@@ -3,5 +3,4 @@ Extended project for a university course course
 
 Select and filter entities
 
-
-<a href="https://gfycat.com/PertinentFlusteredConch"><img src="https://gfycat.com/PertinentFlusteredConch" /></a>
+![Student_Filter_GIF](https://thumbs.gfycat.com/PertinentFlusteredConch-size_restricted.gif)
